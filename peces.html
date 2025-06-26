@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ofertas para Peces 🐠 - Alerta Peluda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-peces">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación por categorías -->
+    <nav class="category-nav">
+      <div class="container">
+        <div class="category-buttons">
+          <a href="index.html" class="category-btn">
+            <i class="bi bi-grid-3x3-gap"></i>
+            Todas las ofertas
+          </a>
+          <a href="perros.html" class="category-btn">
+            <i class="bi bi-heart"></i>
+            Perros
+          </a>
+          <a href="gatos.html" class="category-btn">
+            <i class="bi bi-emoji-smile"></i>
+            Gatos
+          </a>
+          <a href="pajaros.html" class="category-btn">
+            <i class="bi bi-music-note"></i>
+            Pájaros
+          </a>
+          <a href="pequenos.html" class="category-btn">
+            <i class="bi bi-star"></i>
+            Pequeños
+          </a>
+          <a href="peces.html" class="category-btn active">
+            <i class="bi bi-droplet"></i>
+            Peces
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Específico para Peces -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hero-badge">
+              <i class="bi bi-water"></i> Ofertas especiales para peces
+            </div>
+            <h2>🐠 Las mejores ofertas para tus peces</h2>
+            <p>
+              Acuarios completos, filtros potentes, decoración natural y todo lo
+              necesario para crear el ecosistema perfecto para tus peces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h3>🌊 Ofertas Exclusivas para Peces</h3>
+          <p>Los mejores productos para crear el acuario de tus sueños</p>
+          <div class="products-counter">
+            <span>Mostrando ofertas para peces</span>
+            <span class="counter-badge">6 productos</span>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4">
+          <!-- Producto 1: Acuario Completo -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Acuario Completo LED"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-lightbulb-fill text-warning"></i>
+                  Acuario Completo LED + Filtro - 60L
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€199.99</span>
+                  <span class="sale-price">€139.99</span>
+                  <span class="discount-badge">-30%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('acuario-completo')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2: Filtro Externo -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Filtro Externo Profesional"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-arrow-clockwise text-info"></i>
+                  Filtro Externo Profesional - 1000L/h
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€89.99</span>
+                  <span class="sale-price">€59.99</span>
+                  <span class="discount-badge">-33%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('filtro-externo')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3: Decoración Acuario -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Set Decoración Natural"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-tree-fill text-success"></i>
+                  Set Decoración Natural + Plantas - Premium
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€44.99</span>
+                  <span class="sale-price">€29.99</span>
+                  <span class="discount-badge">-33%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('decoracion-acuario')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4: Comida Peces Tropicales -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Comida Premium Peces Tropicales"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-heart-pulse-fill text-danger"></i>
+                  Comida Premium Peces Tropicales - 1kg
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€24.99</span>
+                  <span class="sale-price">€16.99</span>
+                  <span class="discount-badge">-32%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('comida-tropicales')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5: Iluminación LED -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Iluminación LED Acuario"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-brightness-high-fill text-warning"></i>
+                  Iluminación LED Regulable - 90cm
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€79.99</span>
+                  <span class="sale-price">€52.99</span>
+                  <span class="discount-badge">-34%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('iluminacion-led')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6: Termocalentador -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Termocalentador Automático"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-peces">
+                  <i class="bi bi-droplet"></i> Peces
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-thermometer-half text-danger"></i>
+                  Termocalentador Automático - 200W
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€34.99</span>
+                  <span class="sale-price">€22.99</span>
+                  <span class="discount-badge">-34%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('termocalentador')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información adicional sobre peces -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div
+              class="alert alert-info border-0"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(65, 105, 225, 0.1),
+                  rgba(100, 149, 237, 0.1)
+                );
+                border-radius: 15px;
+              "
+            >
+              <h5 class="mb-2">
+                <i class="bi bi-lightbulb-fill"></i> ¿Sabías que...?
+              </h5>
+              <p class="mb-0">
+                Los peces necesitan un ecosistema equilibrado: agua limpia,
+                temperatura adecuada, filtración eficiente y alimentación
+                balanceada. Un buen acuario puede durar décadas con el cuidado
+                apropiado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <div
+              class="alert border-0"
+              style="
+                background: linear-gradient(45deg, var(--fish-color), #6495ed);
+                color: white;
+                border-radius: 15px;
+              "
+            >
+              <h5 class="mb-2">
+                <i class="bi bi-water"></i> ¡Crea el acuario perfecto!
+              </h5>
+              <p class="mb-0">
+                Dale a tus peces un hogar espectacular. La tranquilidad de un
+                acuario hermoso no tiene precio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>
+            Conecta con nosotros en redes sociales para no perderte ninguna
+            oferta
+          </p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Hecho con ❤️ para los amantes de las
+              mascotas.
+            </p>
+            <small
+              >* Los precios pueden variar. Consulta siempre la tienda
+              oficial.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+  </body>
+</html>

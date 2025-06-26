@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ofertas para Gatos 🐱 - Alerta Peluda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-gatos">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación por categorías -->
+    <nav class="category-nav">
+      <div class="container">
+        <div class="category-buttons">
+          <a href="index.html" class="category-btn">
+            <i class="bi bi-grid-3x3-gap"></i>
+            Todas las ofertas
+          </a>
+          <a href="perros.html" class="category-btn">
+            <i class="bi bi-heart"></i>
+            Perros
+          </a>
+          <a href="gatos.html" class="category-btn active">
+            <i class="bi bi-emoji-smile"></i>
+            Gatos
+          </a>
+          <a href="pajaros.html" class="category-btn">
+            <i class="bi bi-music-note"></i>
+            Pájaros
+          </a>
+          <a href="pequenos.html" class="category-btn">
+            <i class="bi bi-star"></i>
+            Pequeños
+          </a>
+          <a href="peces.html" class="category-btn">
+            <i class="bi bi-droplet"></i>
+            Peces
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Específico para Gatos -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hero-badge">
+              <i class="bi bi-emoji-heart-eyes"></i> Ofertas especiales para
+              gatos
+            </div>
+            <h2>🐱 Las mejores ofertas para tu gato</h2>
+            <p>
+              Rascadores gigantes, arena premium, juguetes interactivos y todo
+              lo que tu felino independiente necesita para estar cómodo y
+              entretenido.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h3>😸 Ofertas Exclusivas para Gatos</h3>
+          <p>
+            Los mejores productos seleccionados especialmente para nuestros
+            amigos felinos
+          </p>
+          <div class="products-counter">
+            <span>Mostrando ofertas para gatos</span>
+            <span class="counter-badge">8 productos</span>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4">
+          <!-- Producto 1: Torre de Juegos -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Juguete Interactivo para Gatos"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-heart-fill text-danger"></i>
+                  Torre de Juegos Interactiva para Gatos
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€34.99</span>
+                  <span class="sale-price">€24.99</span>
+                  <span class="discount-badge">-29%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('torre-juegos-gatos')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2: Rascador Gigante -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Rascador Gigante para Gatos"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-gem text-primary"></i>
+                  Rascador Gigante con Casita - 180cm
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€159.99</span>
+                  <span class="sale-price">€99.99</span>
+                  <span class="discount-badge">-38%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('rascador-gigante')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3: Arena Premium -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Arena Aglomerante Premium"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-recycle text-success"></i>
+                  Arena Aglomerante Premium - 20kg
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€29.99</span>
+                  <span class="sale-price">€19.99</span>
+                  <span class="discount-badge">-33%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('arena-premium')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4: Pack Juguetes -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Pack Juguetes Variados Gatos"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-gift-fill text-danger"></i>
+                  Pack 15 Juguetes Variados para Gatos
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€39.99</span>
+                  <span class="sale-price">€24.99</span>
+                  <span class="discount-badge">-38%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('pack-juguetes-gatos')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5: Fuente de Agua -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                alt="Fuente de Agua Automática"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-droplet-fill text-info"></i>
+                  Fuente de Agua Automática Silenciosa - 2L
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€49.99</span>
+                  <span class="sale-price">€32.99</span>
+                  <span class="discount-badge">-34%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('fuente-agua-gatos')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6: Casita Térmica -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Casita Térmica para Gatos"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-house-heart-fill text-warning"></i>
+                  Casita Térmica Autocalentable - Interior
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€54.99</span>
+                  <span class="sale-price">€36.99</span>
+                  <span class="discount-badge">-33%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('casita-termica')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 7: Transportín Premium -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                alt="Transportín Premium Gatos"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-airplane-fill text-primary"></i>
+                  Transportín Premium con Ventanas - M
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€59.99</span>
+                  <span class="sale-price">€39.99</span>
+                  <span class="discount-badge">-33%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('transportin-gatos')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 8: Hierba Gatera Premium -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Hierba Gatera Premium"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div class="category-badge badge-gatos">
+                  <i class="bi bi-emoji-smile"></i> Gatos
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-flower1 text-success"></i>
+                  Hierba Gatera Premium + Spray - Pack
+                </h4>
+
+                <div class="price-section">
+                  <span class="original-price">€19.99</span>
+                  <span class="sale-price">€12.99</span>
+                  <span class="discount-badge">-35%</span>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="handleOfferClick('hierba-gatera')"
+                >
+                  <i class="bi bi-bag-check"></i> Ver Oferta
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información adicional sobre gatos -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div
+              class="alert alert-info border-0"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(147, 112, 219, 0.1),
+                  rgba(186, 85, 211, 0.1)
+                );
+                border-radius: 15px;
+              "
+            >
+              <h5 class="mb-2">
+                <i class="bi bi-lightbulb-fill"></i> ¿Sabías que...?
+              </h5>
+              <p class="mb-0">
+                Los gatos son animales muy independientes pero necesitan
+                estimulación mental y física. Un buen rascador, juguetes
+                interactivos y un lugar cómodo para descansar son esenciales
+                para su bienestar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <div
+              class="alert border-0"
+              style="
+                background: linear-gradient(45deg, var(--cat-color), #ba55d3);
+                color: white;
+                border-radius: 15px;
+              "
+            >
+              <h5 class="mb-2">
+                <i class="bi bi-heart-fill"></i> ¡Tu gato merece ser el rey de
+                la casa!
+              </h5>
+              <p class="mb-0">
+                Explora todas nuestras categorías para encontrar todo lo que
+                necesitas para tu mascota ideal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>
+            Conecta con nosotros en redes sociales para no perderte ninguna
+            oferta
+          </p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Hecho con ❤️ para los amantes de las
+              mascotas.
+            </p>
+            <small
+              >* Los precios pueden variar. Consulta siempre la tienda
+              oficial.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+  </body>
+</html>
