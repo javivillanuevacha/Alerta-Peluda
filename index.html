@@ -41,34 +41,83 @@
       </div>
     </header>
 
-    <!-- Navegación por categorías -->
-    <nav class="category-nav">
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
       <div class="container">
-        <div class="category-buttons">
-          <a href="index.html" class="category-btn active">
-            <i class="bi bi-grid-3x3-gap"></i>
-            Todas las ofertas
-          </a>
-          <a href="perros.html" class="category-btn">
-            <i class="bi bi-heart"></i>
-            Perros
-          </a>
-          <a href="gatos.html" class="category-btn">
-            <i class="bi bi-emoji-smile"></i>
-            Gatos
-          </a>
-          <a href="pajaros.html" class="category-btn">
-            <i class="bi bi-music-note"></i>
-            Pájaros
-          </a>
-          <a href="pequenos.html" class="category-btn">
-            <i class="bi bi-star"></i>
-            Pequeños
-          </a>
-          <a href="peces.html" class="category-btn">
-            <i class="bi bi-droplet"></i>
-            Peces
-          </a>
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="index.html" class="category-btn active">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos -->
+            <li class="nav-item">
+              <a href="consejos-peludos.html" class="category-btn">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="otros/peces.html">🐟 Peces</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -110,17 +159,15 @@
         <div class="row g-4">
           <!-- Producto 1: Pienso Premium Perros -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="perros">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=1"
                 alt="Pienso Premium para Perros"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-perros">
-                  <i class="bi bi-heart"></i> Perros
-                </div>
+                <div class="category-badge badge-perros">🐶 Perros</div>
                 <h4 class="product-title">
                   <i class="bi bi-star-fill text-warning"></i>
                   Pienso Premium Royal Canin - Adulto 15kg
@@ -144,17 +191,15 @@
 
           <!-- Producto 2: Juguete Gatos -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="gatos">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=2"
                 alt="Juguete Interactivo para Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-heart-fill text-danger"></i>
                   Torre de Juegos Interactiva para Gatos
@@ -178,17 +223,15 @@
 
           <!-- Producto 3: Cama Perros -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="perros">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=3"
                 alt="Cama Ortopédica para Perros"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-perros">
-                  <i class="bi bi-heart"></i> Perros
-                </div>
+                <div class="category-badge badge-perros">🐶 Perros</div>
                 <h4 class="product-title">
                   <i class="bi bi-award-fill text-success"></i>
                   Cama Ortopédica Memory Foam - Talla L
@@ -212,17 +255,15 @@
 
           <!-- Producto 4: Rascador Gatos -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="gatos">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=4"
                 alt="Rascador Gigante para Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-gem text-primary"></i>
                   Rascador Gigante con Casita - 180cm
@@ -246,17 +287,15 @@
 
           <!-- Producto 5: Jaula Pájaros -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="pajaros">
+            <div class="product-card">
               <img
-                src="https://images.pexels.com/photos/2058840/pexels-photo-2058840.jpeg?auto=compress&cs=tinysrgb&w=400"
+                src="https://picsum.photos/400/300?random=5"
                 alt="Jaula Premium para Pájaros"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-pajaros">
-                  <i class="bi bi-music-note"></i> Pájaros
-                </div>
+                <div class="category-badge badge-pajaros">🐦 Pájaros</div>
                 <h4 class="product-title">
                   <i class="bi bi-house-fill text-info"></i>
                   Jaula Premium con Accesorios - XL
@@ -280,17 +319,15 @@
 
           <!-- Producto 6: Acuario Peces -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="peces">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=6"
                 alt="Acuario Completo LED"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-peces">
-                  <i class="bi bi-droplet"></i> Peces
-                </div>
+                <div class="category-badge badge-peces">🐟 Peces</div>
                 <h4 class="product-title">
                   <i class="bi bi-lightbulb-fill text-warning"></i>
                   Acuario Completo LED + Filtro - 60L
@@ -314,17 +351,15 @@
 
           <!-- Producto 7: Transportín Perros -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="perros">
+            <div class="product-card">
               <img
-                src="https://images.pexels.com/photos/6568945/pexels-photo-6568945.jpeg?auto=compress&cs=tinysrgb&w=400"
+                src="https://picsum.photos/400/300?random=7"
                 alt="Transportín Premium"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-perros">
-                  <i class="bi bi-heart"></i> Perros
-                </div>
+                <div class="category-badge badge-perros">🐶 Perros</div>
                 <h4 class="product-title">
                   <i class="bi bi-truck text-success"></i>
                   Transportín Premium Homologado - M
@@ -348,17 +383,15 @@
 
           <!-- Producto 8: Arena Gatos -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="gatos">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=8"
                 alt="Arena Aglomerante Premium"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-recycle text-success"></i>
                   Arena Aglomerante Premium - 20kg
@@ -380,33 +413,31 @@
             </div>
           </div>
 
-          <!-- Producto 9: Hábitat Hámster -->
+          <!-- Producto 9: Collar GPS Perros -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="pequenos">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Hábitat Completo Hámster"
+                src="https://picsum.photos/400/300?random=9"
+                alt="Collar GPS Inteligente"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-pequenos">
-                  <i class="bi bi-star"></i> Pequeños
-                </div>
+                <div class="category-badge badge-perros">🐶 Perros</div>
                 <h4 class="product-title">
-                  <i class="bi bi-house-door-fill text-primary"></i>
-                  Hábitat Completo Hámster + Accesorios
+                  <i class="bi bi-geo-alt-fill text-primary"></i>
+                  Collar GPS Inteligente - Localización 24/7
                 </h4>
 
                 <div class="price-section">
-                  <span class="original-price">€79.99</span>
-                  <span class="sale-price">€54.99</span>
+                  <span class="original-price">€129.99</span>
+                  <span class="sale-price">€89.99</span>
                   <span class="discount-badge">-31%</span>
                 </div>
 
                 <button
                   class="offer-btn"
-                  onclick="handleOfferClick('habitat-hamster')"
+                  onclick="handleOfferClick('collar-gps')"
                 >
                   <i class="bi bi-bag-check"></i> Ver Oferta
                 </button>
@@ -414,33 +445,31 @@
             </div>
           </div>
 
-          <!-- Producto 10: Correa Perros -->
+          <!-- Producto 10: Fuente Agua Gatos -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="perros">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Correa Extensible Profesional"
+                src="https://picsum.photos/400/300?random=10"
+                alt="Fuente de Agua Automática"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-perros">
-                  <i class="bi bi-heart"></i> Perros
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
-                  <i class="bi bi-link-45deg text-warning"></i>
-                  Correa Extensible Profesional - 5m
+                  <i class="bi bi-droplet-fill text-info"></i>
+                  Fuente de Agua Automática Silenciosa - 2L
                 </h4>
 
                 <div class="price-section">
-                  <span class="original-price">€24.99</span>
-                  <span class="sale-price">€16.99</span>
-                  <span class="discount-badge">-32%</span>
+                  <span class="original-price">€49.99</span>
+                  <span class="sale-price">€32.99</span>
+                  <span class="discount-badge">-34%</span>
                 </div>
 
                 <button
                   class="offer-btn"
-                  onclick="handleOfferClick('correa-extensible')"
+                  onclick="handleOfferClick('fuente-agua-gatos')"
                 >
                   <i class="bi bi-bag-check"></i> Ver Oferta
                 </button>
@@ -448,33 +477,31 @@
             </div>
           </div>
 
-          <!-- Producto 11: Comida Pájaros -->
+          <!-- Producto 11: Comedero Automático -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="pajaros">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Mezcla Premium Canarios"
+                src="https://picsum.photos/400/300?random=11"
+                alt="Comedero Automático"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-pajaros">
-                  <i class="bi bi-music-note"></i> Pájaros
-                </div>
+                <div class="category-badge badge-perros">🐶 Perros</div>
                 <h4 class="product-title">
-                  <i class="bi bi-egg-fried text-warning"></i>
-                  Mezcla Premium Canarios - 5kg
+                  <i class="bi bi-clock-fill text-info"></i>
+                  Comedero Automático Programable - 6L
                 </h4>
 
                 <div class="price-section">
-                  <span class="original-price">€18.99</span>
-                  <span class="sale-price">€12.99</span>
-                  <span class="discount-badge">-32%</span>
+                  <span class="original-price">€89.99</span>
+                  <span class="sale-price">€59.99</span>
+                  <span class="discount-badge">-33%</span>
                 </div>
 
                 <button
                   class="offer-btn"
-                  onclick="handleOfferClick('comida-canarios')"
+                  onclick="handleOfferClick('comedero-automatico')"
                 >
                   <i class="bi bi-bag-check"></i> Ver Oferta
                 </button>
@@ -482,19 +509,17 @@
             </div>
           </div>
 
-          <!-- Producto 12: Juguetes Gatos Pack -->
+          <!-- Producto 12: Pack Juguetes Gatos -->
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="product-card" data-category="gatos">
+            <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=12"
                 alt="Pack Juguetes Variados Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-gift-fill text-danger"></i>
                   Pack 15 Juguetes Variados para Gatos

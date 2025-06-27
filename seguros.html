@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguros para Mascotas 🛡️ - PetPlan | Alerta Peluda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-seguros">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
+      <div class="container">
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos -->
+            <li class="nav-item">
+              <a href="consejos-peludos.html" class="category-btn">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas - ACTIVO -->
+            <li class="nav-item">
+              <a href="seguros.html" class="category-btn active">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="otros/peces.html">🐟 Peces</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section PetPlan -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="hero-badge"
+              style="background: linear-gradient(45deg, #0066cc, #004499)"
+            >
+              <i class="bi bi-award"></i> Líder europeo en seguros para mascotas
+            </div>
+            <h2>🛡️ Protege a tu mascota con PetPlan</h2>
+            <p>
+              <strong>Más de 47 años cuidando perros y gatos</strong> • 1.5
+              millones de mascotas aseguradas • En España de la mano de
+              Telefónica Seguros
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PetPlan Info Section -->
+    <section class="products-section">
+      <div class="container">
+        <!-- Introducción PetPlan -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <div
+              class="alert"
+              style="
+                background: linear-gradient(45deg, #0066cc, #004499);
+                color: white;
+                border-radius: 15px;
+                border: none;
+              "
+            >
+              <h3 class="mb-3">
+                <i class="bi bi-shield-fill-check"></i> PetPlan - Especialistas
+                en Seguros para Mascotas
+              </h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>
+                    <i class="bi bi-globe-europe-africa"></i> Líder Europeo
+                  </h5>
+                  <p>
+                    Presentes en España, Reino Unido, Alemania, Holanda, EEUU,
+                    Brasil, Australia, Nueva Zelanda y Canadá
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <h5>
+                    <i class="bi bi-calendar-check"></i> 47 Años de Experiencia
+                  </h5>
+                  <p>
+                    Desde 1976 protegiendo la salud de perros y gatos en todo el
+                    mundo
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <h5>
+                    <i class="bi bi-people-fill"></i> 1.5M Mascotas Aseguradas
+                  </h5>
+                  <p>
+                    Somos los ÚNICOS especialistas exclusivos en seguros para
+                    perros y gatos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Productos de Seguros -->
+        <div class="section-title">
+          <h3>🏥 Tipos de Cobertura PetPlan</h3>
+          <p>Protección completa para tu perro o gato</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <!-- Seguro Veterinario -->
+          <div class="col-lg-6 col-md-12">
+            <div class="product-card" style="border: 2px solid #0066cc">
+              <img
+                src="https://images.pexels.com/photos/6568945/pexels-photo-6568945.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Seguro Veterinario PetPlan"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div
+                  class="category-badge"
+                  style="background: rgba(0, 102, 204, 0.1); color: #0066cc"
+                >
+                  <i class="bi bi-hospital"></i> Seguro Veterinario
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-heart-pulse-fill text-danger"></i>
+                  Seguro Veterinario Completo
+                </h4>
+
+                <div class="coverage-list">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Consultas veterinarias
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Cirugías y operaciones
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Hospitalización
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Medicamentos
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Diagnósticos por imagen
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Tratamientos especializados
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="requestPetplanQuote('seguro-veterinario')"
+                  style="background: linear-gradient(45deg, #0066cc, #004499)"
+                >
+                  <i class="bi bi-calculator"></i> Pedir Precio
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seguro Responsabilidad Civil -->
+          <div class="col-lg-6 col-md-12">
+            <div class="product-card" style="border: 2px solid #28a745">
+              <img
+                src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Seguro Responsabilidad Civil"
+                class="product-image"
+              />
+
+              <div class="product-info">
+                <div
+                  class="category-badge"
+                  style="background: rgba(40, 167, 69, 0.1); color: #28a745"
+                >
+                  <i class="bi bi-shield-check"></i> Responsabilidad Civil
+                </div>
+                <h4 class="product-title">
+                  <i class="bi bi-shield-fill-check text-success"></i>
+                  Seguro de Responsabilidad Civil
+                </h4>
+
+                <div class="coverage-list">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i> Daños
+                      a terceras personas
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i> Daños
+                      materiales
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Cobertura más completa
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Asistencia jurídica
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Defensa penal
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-success"></i>
+                      Fianzas judiciales
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  class="offer-btn"
+                  onclick="requestPetplanQuote('responsabilidad-civil')"
+                  style="background: linear-gradient(45deg, #28a745, #20c997)"
+                >
+                  <i class="bi bi-info-circle"></i> Más Información
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Razas Cubiertas -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">
+              🐕 Razas de Perros Cubiertas por PetPlan
+            </h4>
+            <div class="alert alert-light border rounded">
+              <div class="row g-3">
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Beagle</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Bichón Maltés</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Border Collie</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Caniche</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Chihuahua</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Cocker Spaniel</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Galgo Español</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Golden Retriever</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Jack Russell Terrier</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Labrador</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Perro de Agua</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Schnauzer</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Teckel</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Yorkshire Terrier</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-primary"></i>
+                    <strong>Pastor Alemán</strong>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                  <div class="breed-item">
+                    <i class="bi bi-circle-fill text-success"></i>
+                    <strong>Y muchas más...</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Presencia Internacional -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h4 class="text-center mb-4">🌍 PetPlan a Nivel Mundial</h4>
+            <div class="row g-3">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-danger"></i>
+                  <h6 class="mt-2">España</h6>
+                  <small class="text-muted">Con Telefónica Seguros</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-primary"></i>
+                  <h6 class="mt-2">Reino Unido</h6>
+                  <small class="text-muted">Sede original</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-warning"></i>
+                  <h6 class="mt-2">Alemania</h6>
+                  <small class="text-muted">Mercado europeo</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-success"></i>
+                  <h6 class="mt-2">Holanda</h6>
+                  <small class="text-muted">Expansión europea</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-info"></i>
+                  <h6 class="mt-2">Estados Unidos</h6>
+                  <small class="text-muted">Mercado americano</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-warning"></i>
+                  <h6 class="mt-2">Brasil</h6>
+                  <small class="text-muted">Sudamérica</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-success"></i>
+                  <h6 class="mt-2">Australia</h6>
+                  <small class="text-muted">Oceanía</small>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="text-center p-3 border rounded bg-light">
+                  <i class="bi bi-flag-fill text-primary"></i>
+                  <h6 class="mt-2">Canadá</h6>
+                  <small class="text-muted">Norteamérica</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Principal -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <div
+              class="alert border-0"
+              style="
+                background: linear-gradient(45deg, #0066cc, #004499);
+                color: white;
+                border-radius: 15px;
+              "
+            >
+              <h4 class="mb-3">
+                <i class="bi bi-telephone-fill"></i> ¿Listo para Proteger a tu
+                Mascota?
+              </h4>
+              <p class="mb-4">
+                Únete a más de 1.5 millones de dueños que confían en PetPlan
+                para cuidar de sus perros y gatos.
+              </p>
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                  <button
+                    class="btn btn-light btn-lg w-100"
+                    onclick="requestPetplanQuote('general')"
+                  >
+                    <i class="bi bi-calculator"></i> Pedir Precio
+                  </button>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <button
+                    class="btn btn-outline-light btn-lg w-100"
+                    onclick="showPetplanInfo()"
+                  >
+                    <i class="bi bi-info-circle"></i> Más Información
+                  </button>
+                </div>
+              </div>
+              <small class="mt-3 d-block">
+                <i class="bi bi-building"></i> En España de la mano de
+                <strong>Telefónica Seguros</strong><br />
+                PetPlan Ibérica S.L. - CIF: B-90.057.431 - Registro DGS: J 3103
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>Tu fuente de confianza para ofertas y protección de mascotas</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Colaboramos con PetPlan para ofrecerte
+              los mejores seguros.
+            </p>
+            <small
+              >* PetPlan es una marca registrada. Información sujeta a las
+              condiciones de la póliza.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+
+    <script>
+      // Función para solicitar presupuesto PetPlan
+      function requestPetplanQuote(tipoSeguro) {
+        showToast(
+          "¡Solicitud enviada! Te contactaremos pronto para tu presupuesto de " +
+            tipoSeguro,
+          "success"
+        );
+
+        // Aquí integrarías con el sistema de PetPlan
+        console.log("Solicitud de presupuesto: " + tipoSeguro);
+
+        // Tracking del lead
+        if (typeof trackEvent !== "undefined") {
+          trackEvent("petplan_quote_request", tipoSeguro, "seguros");
+        }
+      }
+
+      // Función para mostrar más información
+      function showPetplanInfo() {
+        alert(
+          "📞 Contacta con PetPlan:\n\n" +
+            "• Web oficial: petplan.es\n" +
+            "• Teléfono: [NÚMERO_PETPLAN]\n" +
+            "• Email: info@petplan.es\n\n" +
+            "¡Protege a tu mascota con los especialistas!"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -41,34 +41,83 @@
       </div>
     </header>
 
-    <!-- Navegación por categorías -->
-    <nav class="category-nav">
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
       <div class="container">
-        <div class="category-buttons">
-          <a href="index.html" class="category-btn">
-            <i class="bi bi-grid-3x3-gap"></i>
-            Todas las ofertas
-          </a>
-          <a href="perros.html" class="category-btn">
-            <i class="bi bi-heart"></i>
-            Perros
-          </a>
-          <a href="gatos.html" class="category-btn active">
-            <i class="bi bi-emoji-smile"></i>
-            Gatos
-          </a>
-          <a href="pajaros.html" class="category-btn">
-            <i class="bi bi-music-note"></i>
-            Pájaros
-          </a>
-          <a href="pequenos.html" class="category-btn">
-            <i class="bi bi-star"></i>
-            Pequeños
-          </a>
-          <a href="peces.html" class="category-btn">
-            <i class="bi bi-droplet"></i>
-            Peces
-          </a>
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos - ACTIVO -->
+            <li class="nav-item">
+              <a href="gatos.html" class="category-btn active"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos -->
+            <li class="nav-item">
+              <a href="consejos-peludos.html" class="category-btn">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="otros/peces.html">🐟 Peces</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -79,7 +128,7 @@
         <div class="row">
           <div class="col-12">
             <div class="hero-badge">
-              <i class="bi bi-emoji-heart-eyes"></i> Ofertas especiales para
+              <i class="bi bi-lightning-charge"></i> Ofertas especiales para
               gatos
             </div>
             <h2>🐱 Las mejores ofertas para tu gato</h2>
@@ -115,15 +164,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=21"
                 alt="Juguete Interactivo para Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-heart-fill text-danger"></i>
                   Torre de Juegos Interactiva para Gatos
@@ -149,15 +196,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=22"
                 alt="Rascador Gigante para Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-gem text-primary"></i>
                   Rascador Gigante con Casita - 180cm
@@ -183,15 +228,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=23"
                 alt="Arena Aglomerante Premium"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-recycle text-success"></i>
                   Arena Aglomerante Premium - 20kg
@@ -217,15 +260,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=24"
                 alt="Pack Juguetes Variados Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-gift-fill text-danger"></i>
                   Pack 15 Juguetes Variados para Gatos
@@ -251,15 +292,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                src="https://picsum.photos/400/300?random=25"
                 alt="Fuente de Agua Automática"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-droplet-fill text-info"></i>
                   Fuente de Agua Automática Silenciosa - 2L
@@ -285,15 +324,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=26"
                 alt="Casita Térmica para Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-house-heart-fill text-warning"></i>
                   Casita Térmica Autocalentable - Interior
@@ -319,15 +356,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                src="https://picsum.photos/400/300?random=27"
                 alt="Transportín Premium Gatos"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-airplane-fill text-primary"></i>
                   Transportín Premium con Ventanas - M
@@ -353,15 +388,13 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=28"
                 alt="Hierba Gatera Premium"
                 class="product-image"
               />
 
               <div class="product-info">
-                <div class="category-badge badge-gatos">
-                  <i class="bi bi-emoji-smile"></i> Gatos
-                </div>
+                <div class="category-badge badge-gatos">🐱 Gatos</div>
                 <h4 class="product-title">
                   <i class="bi bi-flower1 text-success"></i>
                   Hierba Gatera Premium + Spray - Pack

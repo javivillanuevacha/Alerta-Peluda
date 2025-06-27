@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ofertas para Peces 🐠 - Alerta Peluda</title>
+    <title>Ofertas para Peces 🐟 - Alerta Peluda</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -23,8 +23,8 @@
       rel="stylesheet"
     />
 
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- CSS personalizado - RUTA ACTUALIZADA -->
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body class="page-peces">
     <!-- Header -->
@@ -41,34 +41,81 @@
       </div>
     </header>
 
-    <!-- Navegación por categorías -->
-    <nav class="category-nav">
+    <!-- Navegación V2 - ACTUALIZADA -->
+    <nav class="navbar navbar-expand-lg category-nav">
       <div class="container">
-        <div class="category-buttons">
-          <a href="index.html" class="category-btn">
-            <i class="bi bi-grid-3x3-gap"></i>
-            Todas las ofertas
-          </a>
-          <a href="perros.html" class="category-btn">
-            <i class="bi bi-heart"></i>
-            Perros
-          </a>
-          <a href="gatos.html" class="category-btn">
-            <i class="bi bi-emoji-smile"></i>
-            Gatos
-          </a>
-          <a href="pajaros.html" class="category-btn">
-            <i class="bi bi-music-note"></i>
-            Pájaros
-          </a>
-          <a href="pequenos.html" class="category-btn">
-            <i class="bi bi-star"></i>
-            Pequeños
-          </a>
-          <a href="peces.html" class="category-btn active">
-            <i class="bi bi-droplet"></i>
-            Peces
-          </a>
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="../index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="../perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="../gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos -->
+            <li class="nav-item">
+              <a href="../consejos-peludos.html" class="category-btn">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="../seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) - ACTIVO -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="pajaros.html">🐦 Pájaros</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="peces.html">🐟 Peces</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -81,7 +128,7 @@
             <div class="hero-badge">
               <i class="bi bi-water"></i> Ofertas especiales para peces
             </div>
-            <h2>🐠 Las mejores ofertas para tus peces</h2>
+            <h2>🐟 Las mejores ofertas para tus peces</h2>
             <p>
               Acuarios completos, filtros potentes, decoración natural y todo lo
               necesario para crear el ecosistema perfecto para tus peces.
@@ -110,7 +157,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=70"
                 alt="Acuario Completo LED"
                 class="product-image"
               />
@@ -144,7 +191,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=71"
                 alt="Filtro Externo Profesional"
                 class="product-image"
               />
@@ -178,7 +225,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=72"
                 alt="Set Decoración Natural"
                 class="product-image"
               />
@@ -212,7 +259,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=73"
                 alt="Comida Premium Peces Tropicales"
                 class="product-image"
               />
@@ -246,7 +293,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=74"
                 alt="Iluminación LED Acuario"
                 class="product-image"
               />
@@ -280,7 +327,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <div class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://picsum.photos/400/300?random=75"
                 alt="Termocalentador Automático"
                 class="product-image"
               />
@@ -410,7 +457,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JavaScript personalizado -->
-    <script src="script.js"></script>
+    <!-- JavaScript personalizado - RUTA ACTUALIZADA -->
+    <script src="../script.js"></script>
   </body>
 </html>
