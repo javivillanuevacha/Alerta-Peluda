@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Errores Comunes que Cometen los Novatos con Gatos - Consejos Peludos 📚 - Alerta Peluda</title>
+    <meta name="description" content="Descubre los errores más típicos que cometen los nuevos dueños de gatos y cómo evitarlos." />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="page-articulo">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
+      <div class="container">
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="../index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="../perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="../gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos - ACTIVO -->
+            <li class="nav-item">
+              <a href="../consejos-peludos.html" class="category-btn active">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="../seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../otros/peces.html">🐟 Peces</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">🏠 Inicio</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../consejos-peludos.html">📚 Consejos Peludos</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Errores Novatos Gatos
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Article Header -->
+    <section class="hero-section" style="padding: 40px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Article Category -->
+            <div class="text-center mb-3">
+              <span class="category-badge badge-gatos" style="font-size: 1rem; padding: 8px 16px;">
+                🐱 Gatos
+              </span>
+            </div>
+
+            <!-- Article Title -->
+            <h1 class="text-center mb-4" style="font-size: 2.5rem; font-weight: 600;">
+              Errores Comunes que Cometen los Novatos con Gatos
+            </h1>
+
+            <!-- Article Meta -->
+            <div class="row text-center text-muted mb-4">
+              <div class="col-md-4">
+                <i class="bi bi-calendar3"></i>
+                <span>27 Jun 2025</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-clock"></i>
+                <span>4 min lectura</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-eye"></i>
+                <span>Consejos para Novatos</span>
+              </div>
+            </div>
+
+            <!-- Article Featured Image -->
+            <div class="text-center mb-5">
+              <img 
+                src="https://picsum.photos/800/400?random=205" 
+                alt="Errores Comunes que Cometen los Novatos con Gatos"
+                class="img-fluid rounded shadow-sm"
+                style="max-height: 400px; width: 100%; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="article-content" style="font-size: 1.1rem; line-height: 1.8;">
+              
+              <p>Adoptar un gato es una alegría, pero muchos cometen errores por desconocimiento que pueden afectar el bienestar del felino y la armonía en casa. Aquí te contamos los más comunes para que puedas evitarlos desde el primer día.</p>
+
+              <div class="alert alert-info border-0 my-4" style="background: linear-gradient(45deg, rgba(147, 112, 219, 0.1), rgba(186, 85, 211, 0.1)); border-radius: 15px;">
+                <h5><i class="bi bi-lightbulb-fill text-info"></i> Tranquilo, es Normal</h5>
+                <p class="mb-0">Todos cometemos errores al principio. Lo importante es aprender y ajustar nuestra rutina. Los gatos son muy adaptables y perdonan rápido. 😺</p>
+              </div>
+
+              <h2>❌ Los 10 Errores Más Comunes</h2>
+
+              <!-- Error 1: Arena Perfumada -->
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i class="bi bi-x-circle-fill text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-danger mb-2">1. Usar Arena Perfumada</h5>
+                      <p class="mb-2"><strong>Error:</strong> Comprar arena con perfumes fuertes pensando que es mejor</p>
+                      <p class="mb-2"><strong>Problema:</strong> Los gatos tienen el olfato 14 veces más sensible que nosotros</p>
+                      <p class="mb-0"><strong>✅ Solución:</strong> Arena aglomerante sin perfume o con aroma muy suave</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Error 2: No Esterilizar -->
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i class="bi bi-calendar-x text-warning" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-danger mb-2">2. No Esterilizar a Tiempo</h5>
+                      <p class="mb-2"><strong>Error:</strong> Esperar demasiado para esterilizar o nunca hacerlo</p>
+                      <p class="mb-2"><strong>Problema:</strong> Celos, marcaje, agresividad, embarazos no deseados</p>
+                      <p class="mb-0"><strong>✅ Solución:</strong> Esterilizar entre 4-6 meses (antes del primer celo)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Error 3: No Jugar -->
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i class="bi bi-controller text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-danger mb-2">3. No Dedicar Tiempo al Juego Diario</h5>
+                      <p class="mb-2"><strong>Error:</strong> Pensar que los gatos no necesitan jugar como los perros</p>
+                      <p class="mb-2"><strong>Problema:</strong> Aburrimiento, obesidad, comportamientos destructivos</p>
+                      <p class="mb-0"><strong>✅ Solución:</strong> 15-20 minutos de juego activo al día (caña con plumas, láser)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Error 4: No Rascadores -->
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i class="bi bi-house-door text-success" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-danger mb-2">4. No Poner Rascadores (¡Y Tus Sofás lo Pagan!)</h5>
+                      <p class="mb-2"><strong>Error:</strong> No proporcionar lugares apropiados para rascar</p>
+                      <p class="mb-2"><strong>Problema:</strong> Destrozan muebles, cortinas y tapicerías</p>
+                      <p class="mb-0"><strong>✅ Solución:</strong> Mínimo 2 rascadores: uno vertical alto y uno horizontal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Error 5: Comida Todo el Día -->
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i class="bi bi-bowl text-info" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-danger mb-2">5. Dejarles Comida Todo el Día Sin Control</h5>
+                      <p class="mb-2"><strong>Error:</strong> Llenar el cuenco y dejarlo siempre disponible</p>
+                      <p class="mb-2"><strong>Problema:</strong> Obesidad, sobrecomida, comida en mal estado</p>
+                      <p class="mb-0"><strong>✅ Solución:</strong> 2-3 comidas controladas al día, retirar resto tras 30 min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Errores Adicionales -->
+              <h3>🚫 Más Errores Frecuentes</h3>
+              
+              <div class="row g-4 my-4">
+                <div class="col-md-6">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <h6 class="text-danger">6. 🚪 No Proporcionar Escondites</h6>
+                      <p class="small">Los gatos necesitan lugares altos y seguros donde refugiarse cuando se sienten estresados.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <h6 class="text-danger">7. 🔊 Ruidos Fuertes Constantes</h6>
+                      <p class="small">Aspiradora, música alta, gritos... Los gatos son muy sensibles al ruido y se estresan fácilmente.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <h6 class="text-danger">8. 🐕 Presentación Brusca con Otras Mascotas</h6>
+                      <p class="small">Forzar encuentros rápidos en lugar de hacer presentaciones graduales durante días o semanas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px;">
+                    <div class="card-body">
+                      <h6 class="text-danger">9. 🥛 Darles Leche de Vaca</h6>
+                      <p class="small">La mayoría de gatos adultos son intolerantes a la lactosa. Causa diarrea y malestar digestivo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4 border-0 shadow-sm" style="border-radius: 15px;">
+                <div class="card-body">
+                  <h6 class="text-danger">10. ❌ Castigos Físicos o Gritos</h6>
+                  <p class="mb-2">Los gatos no entienden el castigo como los perros. Solo genera miedo y estrés.</p>
+                  <p class="mb-0"><strong>✅ Mejor:</strong> Refuerzo positivo con premios y caricias cuando hacen algo bien.</p>
+                </div>
+              </div>
+
+              <h2>✅ Cómo Hacer las Cosas Bien</h2>
+
+              <div class="row g-4 my-4">
+                <div class="col-md-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; background: #f0f9ff;">
+                    <div class="card-body text-center">
+                      <i class="bi bi-house-heart-fill text-success" style="font-size: 2.5rem;"></i>
+                      <h6 class="mt-3">Entorno Ideal</h6>
+                      <ul class="text-start small">
+                        <li>Rascadores variados</li>
+                        <li>Lugares altos para trepar</li>
+                        <li>Escondites seguros</li>
+                        <li>Ventanas para observar</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; background: #fef7f0;">
+                    <div class="card-body text-center">
+                      <i class="bi bi-heart-pulse-fill text-warning" style="font-size: 2.5rem;"></i>
+                      <h6 class="mt-3">Rutina Saludable</h6>
+                      <ul class="text-start small">
+                        <li>Comidas a horas fijas</li>
+                        <li>Juego diario 15-20 min</li>
+                        <li>Limpieza arenero diaria</li>
+                        <li>Revisiones veterinarias</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card border-0 shadow-sm h-100" style="border-radius: 15px; background: #f0fdf4;">
+                    <div class="card-body text-center">
+                      <i class="bi bi-emoji-smile-fill text-info" style="font-size: 2.5rem;"></i>
+                      <h6 class="mt-3">Bienestar Emocional</h6>
+                      <ul class="text-start small">
+                        <li>Respeta su espacio personal</li>
+                        <li>Caricias en sus términos</li>
+                        <li>Ambiente tranquilo</li>
+                        <li>Paciencia con su adaptación</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-success border-0 my-4" style="border-radius: 15px;">
+                <h5><i class="bi bi-check-circle-fill text-success"></i> Recuerda</h5>
+                <p class="mb-0">Evitar estos errores hará que tu gato esté más feliz, saludable... y tu casa más tranquila. La paciencia y el conocimiento son clave para una convivencia perfecta. 🐱💕</p>
+              </div>
+
+              <h3>📚 Recursos Adicionales</h3>
+              <ul>
+                <li><strong>Libros recomendados:</strong> "El Comportamiento del Gato" de John Bradshaw</li>
+                <li><strong>Apps útiles:</strong> "Cat Translator" para entender maullidos</li>
+                <li><strong>YouTube:</strong> Canales especializados en comportamiento felino</li>
+                <li><strong>Veterinario:</strong> Consulta regular cada 6-12 meses</li>
+              </ul>
+
+              <!-- Call to Action -->
+              <div class="alert border-0 mt-5" style="background: linear-gradient(45deg, var(--cat-color), #ba55d3); color: white; border-radius: 15px;">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h5><i class="bi bi-heart-fill"></i> ¿Tu gato ya es feliz en casa?</h5>
+                    <p class="mb-0">Comparte estos consejos con otros novatos gatunos. ¡Juntos podemos hacer que más felinos sean felices!</p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <button class="btn btn-light btn-lg" onclick="compartirArticulo()">
+                      <i class="bi bi-share"></i> Compartir
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Blog -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="../consejos-peludos.html" class="btn btn-outline-primary btn-lg">
+              <i class="bi bi-arrow-left"></i> Volver a Consejos Peludos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>Tu fuente de confianza para ofertas y consejos sobre mascotas</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Hecho con ❤️ para los amantes de las
+              mascotas.
+            </p>
+            <small
+              >* La información veterinaria es orientativa. Consulta siempre con
+              un profesional.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="../script.js"></script>
+
+    <script>
+      // Función para compartir artículo
+      function compartirArticulo() {
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href
+          });
+        } else {
+          // Fallback: copiar URL
+          navigator.clipboard.writeText(window.location.href);
+          showToast('URL copiada al portapapeles', 'success');
+        }
+      }
+    </script>
+  </body>
+</html>

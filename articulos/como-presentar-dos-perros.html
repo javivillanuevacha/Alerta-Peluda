@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cómo Presentar Correctamente Dos Perros - Consejos Peludos 📚 - Alerta
+      Peluda
+    </title>
+    <meta
+      name="description"
+      content="Guía paso a paso para presentaciones seguras entre perros: técnicas, señales de alerta y cómo conseguir que se lleven bien."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="page-articulo">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
+      <div class="container">
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="../index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="../perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="../gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos - ACTIVO -->
+            <li class="nav-item">
+              <a href="../consejos-peludos.html" class="category-btn active">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="../seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../otros/peces.html"
+                    >🐟 Peces</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">🏠 Inicio</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../consejos-peludos.html">📚 Consejos Peludos</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Presentar Dos Perros
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Article Header -->
+    <section class="hero-section" style="padding: 40px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Article Category -->
+            <div class="text-center mb-3">
+              <span
+                class="category-badge badge-perros"
+                style="font-size: 1rem; padding: 8px 16px"
+              >
+                🐶 Perros
+              </span>
+            </div>
+
+            <!-- Article Title -->
+            <h1
+              class="text-center mb-4"
+              style="font-size: 2.5rem; font-weight: 600"
+            >
+              Cómo Presentar Correctamente Dos Perros
+            </h1>
+
+            <!-- Article Meta -->
+            <div class="row text-center text-muted mb-4">
+              <div class="col-md-4">
+                <i class="bi bi-calendar3"></i>
+                <span>27 Jun 2025</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-clock"></i>
+                <span>8 min lectura</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-eye"></i>
+                <span>Comportamiento Canino</span>
+              </div>
+            </div>
+
+            <!-- Article Featured Image -->
+            <div class="text-center mb-5">
+              <img
+                src="https://picsum.photos/800/400?random=206"
+                alt="Cómo Presentar Correctamente Dos Perros"
+                class="img-fluid rounded shadow-sm"
+                style="max-height: 400px; width: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              class="article-content"
+              style="font-size: 1.1rem; line-height: 1.8"
+            >
+              <p>
+                Presentar dos perros puede ser un momento decisivo para su
+                relación futura. Una mala presentación puede crear tensión y
+                conflictos duraderos, mientras que una buena presentación puede
+                ser el inicio de una amistad para toda la vida.
+              </p>
+
+              <div
+                class="alert alert-warning border-0 my-4"
+                style="
+                  background: linear-gradient(
+                    45deg,
+                    rgba(255, 193, 7, 0.1),
+                    rgba(253, 126, 20, 0.1)
+                  );
+                  border-radius: 15px;
+                "
+              >
+                <h5>
+                  <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                  Importante
+                </h5>
+                <p class="mb-0">
+                  Nunca apresures una presentación. El 70% de los problemas
+                  entre perros en el mismo hogar se deben a presentaciones
+                  demasiado rápidas o mal gestionadas.
+                </p>
+              </div>
+
+              <h2>🎯 Preparativos Antes de la Presentación</h2>
+
+              <div class="row g-4 my-4">
+                <div class="col-md-6">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 15px"
+                  >
+                    <div class="card-body">
+                      <h6>
+                        <i class="bi bi-clipboard-check text-success"></i>
+                        Evaluación Previa
+                      </h6>
+                      <ul class="small">
+                        <li>✅ Ambos perros vacunados y sanos</li>
+                        <li>✅ Conocer temperamento de cada uno</li>
+                        <li>✅ Elegir momento relajado del día</li>
+                        <li>✅ Tener ayuda de otra persona</li>
+                        <li>✅ Lugar neutro preparado</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 15px"
+                  >
+                    <div class="card-body">
+                      <h6>
+                        <i class="bi bi-gear-fill text-primary"></i> Material
+                        Necesario
+                      </h6>
+                      <ul class="small">
+                        <li>🦮 Correas largas (2-3 metros)</li>
+                        <li>🎾 Premios de alto valor</li>
+                        <li>🧸 Juguetes como distracción</li>
+                        <li>💧 Agua para ambos perros</li>
+                        <li>🚪 Plan de escape preparado</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>📍 Protocolo de Presentación en 5 Fases</h2>
+
+              <!-- Fase 1 -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px"
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <div class="badge bg-primary text-white fs-3">1</div>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-primary mb-2">
+                        <i class="bi bi-eye"></i> Contacto Visual a Distancia
+                      </h5>
+                      <p class="mb-2">
+                        <strong>Dónde:</strong> Lugar neutro (parque, calle
+                        ancha)
+                      </p>
+                      <p class="mb-2">
+                        <strong>Distancia:</strong> 20-30 metros de separación
+                      </p>
+                      <p class="mb-2">
+                        <strong>Duración:</strong> 5-10 minutos
+                      </p>
+                      <p class="mb-0">
+                        <strong>Objetivo:</strong> Que se vean sin tensión,
+                        observar reacciones iniciales
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 2 -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px"
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <div class="badge bg-success text-white fs-3">2</div>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-primary mb-2">
+                        <i class="bi bi-arrow-left-right"></i> Paseo Paralelo
+                      </h5>
+                      <p class="mb-2">
+                        <strong>Técnica:</strong> Caminar en la misma dirección,
+                        cada uno en una acera
+                      </p>
+                      <p class="mb-2">
+                        <strong>Distancia:</strong> Reducir gradualmente de 15m
+                        a 5m
+                      </p>
+                      <p class="mb-2">
+                        <strong>Duración:</strong> 15-20 minutos
+                      </p>
+                      <p class="mb-0">
+                        <strong>Objetivo:</strong> Acostumbrarse a la presencia
+                        del otro mientras hacen ejercicio
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 3 -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px"
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <div class="badge bg-warning text-dark fs-3">3</div>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-primary mb-2">
+                        <i class="bi bi-arrow-through-heart"></i> Acercamiento
+                        Controlado
+                      </h5>
+                      <p class="mb-2">
+                        <strong>Técnica:</strong> Permitir que se acerquen pero
+                        sin contacto directo
+                      </p>
+                      <p class="mb-2">
+                        <strong>Distancia:</strong> 2-3 metros, siempre con
+                        correa
+                      </p>
+                      <p class="mb-2">
+                        <strong>Duración:</strong> 10-15 minutos
+                      </p>
+                      <p class="mb-0">
+                        <strong>Objetivo:</strong> Evaluar lenguaje corporal a
+                        distancia cercana
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 4 -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px"
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <div class="badge bg-info text-white fs-3">4</div>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-primary mb-2">
+                        <i class="bi bi-hand-thumbs-up"></i> Primer Contacto
+                        Supervisado
+                      </h5>
+                      <p class="mb-2">
+                        <strong>Técnica:</strong> Solo si las señales son
+                        positivas
+                      </p>
+                      <p class="mb-2">
+                        <strong>Duración:</strong> Máximo 2-3 minutos
+                      </p>
+                      <p class="mb-2">
+                        <strong>Posición:</strong> Permitir olfatearse
+                        brevemente
+                      </p>
+                      <p class="mb-0">
+                        <strong>Clave:</strong> Intervenir al primer signo de
+                        tensión
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 5 -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px"
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <div class="badge bg-dark text-white fs-3">5</div>
+                    </div>
+                    <div class="col-md-10">
+                      <h5 class="text-primary mb-2">
+                        <i class="bi bi-house-heart"></i> Entrada al Hogar
+                      </h5>
+                      <p class="mb-2">
+                        <strong>Solo si:</strong> Las 4 fases anteriores fueron
+                        exitosas
+                      </p>
+                      <p class="mb-2">
+                        <strong>Técnica:</strong> Perro visitante entra primero,
+                        residente después
+                      </p>
+                      <p class="mb-2">
+                        <strong>Supervisión:</strong> Constante las primeras
+                        24-48 horas
+                      </p>
+                      <p class="mb-0">
+                        <strong>Separación:</strong> Zonas diferenciadas para
+                        comer y descansar
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2>🚨 Señales de Alerta: Cuándo Parar</h2>
+
+              <div class="row g-4 my-4">
+                <div class="col-md-6">
+                  <div
+                    class="alert alert-danger border-0"
+                    style="border-radius: 15px"
+                  >
+                    <h6>
+                      <i class="bi bi-exclamation-triangle-fill"></i> DETÉN
+                      INMEDIATAMENTE si ves:
+                    </h6>
+                    <ul class="mb-0 small">
+                      <li>Pelo erizado en el lomo</li>
+                      <li>Gruñidos o ladridos agresivos</li>
+                      <li>Postura rígida y amenazante</li>
+                      <li>Mirada fija y directa sostenida</li>
+                      <li>Cola tiesa y alta</li>
+                      <li>Dientes visibles</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="alert alert-success border-0"
+                    style="border-radius: 15px"
+                  >
+                    <h6>
+                      <i class="bi bi-check-circle-fill"></i> CONTINÚA si
+                      observas:
+                    </h6>
+                    <ul class="mb-0 small">
+                      <li>Cola relajada o en movimiento</li>
+                      <li>Postura corporal suelta</li>
+                      <li>Olfateo curioso y relajado</li>
+                      <li>Miradas ocasionales, no fijas</li>
+                      <li>Movimientos fluidos</li>
+                      <li>Jadeo normal</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h2>❌ Errores Comunes que Debes Evitar</h2>
+
+              <div class="table-responsive my-4">
+                <table
+                  class="table table-striped rounded"
+                  style="border-radius: 15px; overflow: hidden"
+                >
+                  <thead style="background: #dc3545; color: white">
+                    <tr>
+                      <th>❌ Error</th>
+                      <th>🤔 Por qué es malo</th>
+                      <th>✅ Hazlo así</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Juntarlos directamente en casa</strong></td>
+                      <td>El perro residente se siente invadido</td>
+                      <td>Siempre en territorio neutro primero</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Forzar la interacción</strong></td>
+                      <td>Crea estrés y asociaciones negativas</td>
+                      <td>Permite que se conozcan a su ritmo</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>No supervisar las primeras semanas</strong>
+                      </td>
+                      <td>Pueden surgir conflictos inesperados</td>
+                      <td>Supervisión constante inicial</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Competencia por recursos</strong></td>
+                      <td>Genera conflictos y tensión</td>
+                      <td>Comederos y camas separados</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>⏰ Timeline de Adaptación</h2>
+
+              <div class="row g-3 my-4">
+                <div class="col-md-3">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px; background: #fff3cd"
+                  >
+                    <div class="card-body text-center">
+                      <h6>Día 1-3</h6>
+                      <p class="mb-0 small">
+                        Presentación inicial y primeros contactos supervisados
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px; background: #d4edda"
+                  >
+                    <div class="card-body text-center">
+                      <h6>Semana 1</h6>
+                      <p class="mb-0 small">
+                        Rutinas separadas, interacciones breves y positivas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px; background: #cce7ff"
+                  >
+                    <div class="card-body text-center">
+                      <h6>Mes 1</h6>
+                      <p class="mb-0 small">
+                        Tolerancia mutua, inicio de juegos conjuntos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px; background: #f0e6ff"
+                  >
+                    <div class="card-body text-center">
+                      <h6>Meses 2-6</h6>
+                      <p class="mb-0 small">
+                        Amistad consolidada, convivencia armoniosa
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="alert alert-info border-0 my-4"
+                style="
+                  background: linear-gradient(
+                    45deg,
+                    rgba(13, 202, 240, 0.1),
+                    rgba(25, 135, 84, 0.1)
+                  );
+                  border-radius: 15px;
+                "
+              >
+                <h5>
+                  <i class="bi bi-lightbulb-fill text-info"></i> Consejo de Oro
+                </h5>
+                <p class="mb-0">
+                  La paciencia es tu mejor aliada. Algunos perros se adaptan en
+                  días, otros pueden necesitar meses. No existe un timeline
+                  fijo, respeta el ritmo de cada animal.
+                </p>
+              </div>
+
+              <h3>🎯 Factores que Influyen en el Éxito</h3>
+              <ul>
+                <li>
+                  <strong>Edad:</strong> Cachorros se adaptan más fácil que
+                  adultos
+                </li>
+                <li>
+                  <strong>Sociabilización previa:</strong> Perros bien
+                  socializados aceptan mejor
+                </li>
+                <li>
+                  <strong>Tamaño similar:</strong> Facilita el juego y la
+                  interacción
+                </li>
+                <li>
+                  <strong>Personalidades compatibles:</strong> Activo con
+                  tranquilo suele funcionar
+                </li>
+                <li>
+                  <strong>Mismo sexo:</strong> Machos con machos pueden ser más
+                  conflictivos
+                </li>
+                <li>
+                  <strong>Territorio establecido:</strong> El perro residente
+                  puede ser más territorial
+                </li>
+              </ul>
+
+              <h2>🆘 Cuándo Buscar Ayuda Profesional</h2>
+
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px; background: #fff8e1"
+              >
+                <div class="card-body">
+                  <h6 class="text-warning">Contacta un educador canino si:</h6>
+                  <ul class="mb-0">
+                    <li>Hay agresividad persistente después de 2 semanas</li>
+                    <li>Uno de los perros muestra signos de estrés extremo</li>
+                    <li>Los conflictos van en aumento en lugar de disminuir</li>
+                    <li>Has intentado el protocolo sin éxito durante un mes</li>
+                    <li>Hay diferencias muy grandes de tamaño o edad</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Call to Action -->
+              <div
+                class="alert border-0 mt-5"
+                style="
+                  background: linear-gradient(45deg, var(--dog-color), #d2691e);
+                  color: white;
+                  border-radius: 15px;
+                "
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h5>
+                      <i class="bi bi-heart-fill"></i> ¿Vas a presentar dos
+                      perros?
+                    </h5>
+                    <p class="mb-0">
+                      Comparte este protocolo con otros dueños. Una buena
+                      presentación puede ser el inicio de una amistad para toda
+                      la vida.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <button
+                      class="btn btn-light btn-lg"
+                      onclick="compartirArticulo()"
+                    >
+                      <i class="bi bi-share"></i> Compartir
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Blog -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a
+              href="../consejos-peludos.html"
+              class="btn btn-outline-primary btn-lg"
+            >
+              <i class="bi bi-arrow-left"></i> Volver a Consejos Peludos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>Tu fuente de confianza para ofertas y consejos sobre mascotas</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Hecho con ❤️ para los amantes de las
+              mascotas.
+            </p>
+            <small
+              >* La información veterinaria es orientativa. Consulta siempre con
+              un profesional.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="../script.js"></script>
+
+    <script>
+      // Función para compartir artículo
+      function compartirArticulo() {
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href,
+          });
+        } else {
+          // Fallback: copiar URL
+          navigator.clipboard.writeText(window.location.href);
+          showToast("URL copiada al portapapeles", "success");
+        }
+      }
+    </script>
+  </body>
+</html>

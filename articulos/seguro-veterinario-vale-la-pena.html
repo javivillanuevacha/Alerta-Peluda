@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ¿Vale la Pena un Seguro Veterinario para tu Mascota? - Consejos Peludos 📚
+      - Alerta Peluda
+    </title>
+    <meta
+      name="description"
+      content="Descubre si contratar un seguro veterinario para tu perro o gato es buena idea y qué opciones existen."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="page-articulo">
+    <!-- Header -->
+    <header class="custom-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="logo-section text-center">
+              <h1>Alerta Peluda 🐾</h1>
+              <p>Tu compañero de ofertas para mascotas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navegación V2 - Responsive con Dropdown -->
+    <nav class="navbar navbar-expand-lg category-nav">
+      <div class="container">
+        <!-- Botón hamburguesa para móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav category-buttons-v2">
+            <!-- 1. Todas las Ofertas -->
+            <li class="nav-item">
+              <a href="../index.html" class="category-btn">
+                🏠 Todas las Ofertas
+              </a>
+            </li>
+
+            <!-- 2. Perros -->
+            <li class="nav-item">
+              <a href="../perros.html" class="category-btn"> 🐶 Perros </a>
+            </li>
+
+            <!-- 3. Gatos -->
+            <li class="nav-item">
+              <a href="../gatos.html" class="category-btn"> 🐱 Gatos </a>
+            </li>
+
+            <!-- 4. Consejos Peludos - ACTIVO -->
+            <li class="nav-item">
+              <a href="../consejos-peludos.html" class="category-btn active">
+                📚 Consejos Peludos
+              </a>
+            </li>
+
+            <!-- 5. Seguros para Mascotas -->
+            <li class="nav-item">
+              <a href="../seguros.html" class="category-btn">
+                🛡️ Seguros para Mascotas
+              </a>
+            </li>
+
+            <!-- 6. Otros (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a
+                class="category-btn dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                📦 Otros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../otros/pajaros.html"
+                    >🐦 Pájaros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../otros/peces.html"
+                    >🐟 Peces</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="../index.html">🏠 Inicio</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../consejos-peludos.html">📚 Consejos Peludos</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Seguro Veterinario
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Article Header -->
+    <section class="hero-section" style="padding: 40px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Article Category -->
+            <div class="text-center mb-3">
+              <span
+                class="category-badge"
+                style="
+                  background: rgba(13, 110, 253, 0.1);
+                  color: #0d6efd;
+                  font-size: 1rem;
+                  padding: 8px 16px;
+                  border-radius: 20px;
+                "
+              >
+                🛡️ Seguros
+              </span>
+            </div>
+
+            <!-- Article Title -->
+            <h1
+              class="text-center mb-4"
+              style="font-size: 2.5rem; font-weight: 600"
+            >
+              ¿Vale la Pena un Seguro Veterinario para tu Mascota?
+            </h1>
+
+            <!-- Article Meta -->
+            <div class="row text-center text-muted mb-4">
+              <div class="col-md-4">
+                <i class="bi bi-calendar3"></i>
+                <span>27 Jun 2025</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-clock"></i>
+                <span>6 min lectura</span>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-eye"></i>
+                <span>Consejos Profesionales</span>
+              </div>
+            </div>
+
+            <!-- Article Featured Image -->
+            <div class="text-center mb-5">
+              <img
+                src="https://picsum.photos/800/400?random=203"
+                alt="¿Vale la Pena un Seguro Veterinario para tu Mascota?"
+                class="img-fluid rounded shadow-sm"
+                style="max-height: 400px; width: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              class="article-content"
+              style="font-size: 1.1rem; line-height: 1.8"
+            >
+              <p>
+                Muchos dueños se preguntan si un seguro veterinario es realmente
+                útil. La respuesta no es simple, pero aquí te damos todas las
+                claves para que puedas decidir si merece la pena para tu
+                situación particular.
+              </p>
+
+              <div
+                class="alert alert-info border-0 my-4"
+                style="
+                  background: linear-gradient(
+                    45deg,
+                    rgba(13, 110, 253, 0.1),
+                    rgba(25, 135, 84, 0.1)
+                  );
+                  border-radius: 15px;
+                "
+              >
+                <h5>
+                  <i class="bi bi-lightbulb-fill text-info"></i> Dato Importante
+                </h5>
+                <p class="mb-0">
+                  El 70% de las mascotas necesitarán atención veterinaria de
+                  urgencia al menos una vez en su vida, con costes que pueden
+                  superar fácilmente los 1.000€.
+                </p>
+              </div>
+
+              <h2>💰 ¿Cuánto Puede Costar un Veterinario?</h2>
+
+              <p>
+                Antes de decidir sobre un seguro, es importante conocer los
+                costes reales de la atención veterinaria:
+              </p>
+
+              <!-- Tabla de Costes -->
+              <div class="table-responsive my-4">
+                <table
+                  class="table table-striped rounded"
+                  style="border-radius: 15px; overflow: hidden"
+                >
+                  <thead style="background: #0d6efd; color: white">
+                    <tr>
+                      <th>Tipo de Consulta</th>
+                      <th>Coste Aproximado</th>
+                      <th>Urgencia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Consulta rutinaria</td>
+                      <td>30-50€</td>
+                      <td><span class="badge bg-success">Baja</span></td>
+                    </tr>
+                    <tr>
+                      <td>Vacunación completa</td>
+                      <td>80-120€</td>
+                      <td><span class="badge bg-success">Baja</span></td>
+                    </tr>
+                    <tr>
+                      <td>Urgencia nocturna</td>
+                      <td>150-300€</td>
+                      <td><span class="badge bg-warning">Media</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cirugía menor</td>
+                      <td>200-500€</td>
+                      <td><span class="badge bg-warning">Media</span></td>
+                    </tr>
+                    <tr>
+                      <td>Cirugía mayor</td>
+                      <td>800-2.500€</td>
+                      <td><span class="badge bg-danger">Alta</span></td>
+                    </tr>
+                    <tr>
+                      <td>Tratamiento cáncer</td>
+                      <td>1.500-5.000€</td>
+                      <td><span class="badge bg-danger">Alta</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>🛡️ ¿Qué Cubre un Seguro Veterinario?</h2>
+
+              <!-- Coberturas -->
+              <div class="row g-4 my-4">
+                <div class="col-md-6">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 15px"
+                  >
+                    <div class="card-body text-center">
+                      <i
+                        class="bi bi-heart-pulse text-danger"
+                        style="font-size: 3rem"
+                      ></i>
+                      <h5 class="mt-3">Cobertura Veterinaria</h5>
+                      <ul class="text-start">
+                        <li>Accidentes y enfermedades</li>
+                        <li>Urgencias 24/7</li>
+                        <li>Cirugías</li>
+                        <li>Hospitalización</li>
+                        <li>Medicamentos</li>
+                        <li>Diagnósticos por imagen</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 15px"
+                  >
+                    <div class="card-body text-center">
+                      <i
+                        class="bi bi-shield-check text-success"
+                        style="font-size: 3rem"
+                      ></i>
+                      <h5 class="mt-3">Responsabilidad Civil</h5>
+                      <ul class="text-start">
+                        <li>Daños a terceros</li>
+                        <li>Mordeduras</li>
+                        <li>Daños materiales</li>
+                        <li>Gastos legales</li>
+                        <li>Hasta 300.000€</li>
+                        <li>Fundamental para perros</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>📊 Análisis: ¿Merece la Pena?</h3>
+
+              <!-- Casos donde SÍ merece la pena -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px; border-left: 5px solid #198754"
+              >
+                <div class="card-body">
+                  <h5 class="text-success">
+                    <i class="bi bi-check-circle-fill"></i> SÍ merece la pena
+                    si:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <strong>Mascota joven:</strong> Más años de cobertura por
+                      delante
+                    </li>
+                    <li>
+                      <strong>Raza propensa a problemas:</strong> Pastor Alemán,
+                      Bulldog, etc.
+                    </li>
+                    <li>
+                      <strong>Presupuesto ajustado:</strong> No puedes
+                      permitirte gastos de 1.000€+
+                    </li>
+                    <li>
+                      <strong>Múltiples mascotas:</strong> El riesgo se
+                      multiplica
+                    </li>
+                    <li>
+                      <strong>Perros grandes:</strong> Responsabilidad civil
+                      fundamental
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Casos donde NO merece la pena -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="border-radius: 15px; border-left: 5px solid #dc3545"
+              >
+                <div class="card-body">
+                  <h5 class="text-danger">
+                    <i class="bi bi-x-circle-fill"></i> Puede NO merecer la pena
+                    si:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <strong>Mascota muy mayor:</strong> Pocas aseguradoras los
+                      aceptan
+                    </li>
+                    <li>
+                      <strong>Problemas preexistentes:</strong> No los cubrirán
+                    </li>
+                    <li>
+                      <strong>Presupuesto holgado:</strong> Puedes pagar
+                      urgencias sin problema
+                    </li>
+                    <li>
+                      <strong>Gato de interior:</strong> Menos riesgo de
+                      accidentes
+                    </li>
+                    <li>
+                      <strong>Zona rural:</strong> Veterinarios más baratos
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3>🏆 Opciones Recomendadas en España</h3>
+
+              <!-- PetPlan destacado -->
+              <div
+                class="card mb-4 border-0 shadow-sm"
+                style="
+                  border-radius: 15px;
+                  background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+                "
+              >
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                      <i
+                        class="bi bi-award-fill text-warning"
+                        style="font-size: 3rem"
+                      ></i>
+                    </div>
+                    <div class="col-md-10">
+                      <h4 class="text-primary mb-2">
+                        <i class="bi bi-star-fill text-warning"></i> PetPlan
+                        (Recomendado)
+                      </h4>
+                      <p class="mb-2">
+                        <strong>Especialistas en seguros para mascotas</strong>
+                        - 47 años de experiencia
+                      </p>
+                      <p class="mb-2">
+                        ✅ Cobertura veterinaria completa | ✅ Responsabilidad
+                        civil | ✅ 1.5M mascotas aseguradas
+                      </p>
+                      <p class="mb-0">
+                        <strong>Desde 15€/mes</strong> - Reembolso hasta el 80%
+                        de gastos veterinarios
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Otras opciones -->
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px"
+                  >
+                    <div class="card-body text-center">
+                      <h6>💙 Mapfre</h6>
+                      <p class="mb-0 small">
+                        Desde 12€/mes<br />Cobertura básica
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px"
+                  >
+                    <div class="card-body text-center">
+                      <h6>🟢 Santalucía</h6>
+                      <p class="mb-0 small">
+                        Desde 18€/mes<br />Buena cobertura
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div
+                    class="card border-0 shadow-sm h-100"
+                    style="border-radius: 10px"
+                  >
+                    <div class="card-body text-center">
+                      <h6>🔵 AXA</h6>
+                      <p class="mb-0 small">
+                        Desde 25€/mes<br />Cobertura premium
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="alert alert-warning border-0 my-4"
+                style="
+                  background: linear-gradient(
+                    45deg,
+                    rgba(255, 193, 7, 0.1),
+                    rgba(253, 126, 20, 0.1)
+                  );
+                  border-radius: 15px;
+                "
+              >
+                <h5>
+                  <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                  Consejos Importantes
+                </h5>
+                <ul class="mb-0">
+                  <li>
+                    <strong>Lee la letra pequeña:</strong> Exclusiones,
+                    franquicias, límites
+                  </li>
+                  <li>
+                    <strong>Período de carencia:</strong> Normalmente 15-30 días
+                    sin cobertura
+                  </li>
+                  <li>
+                    <strong>Edad límite:</strong> Muchas aseguradoras no aceptan
+                    mayores de 8 años
+                  </li>
+                  <li>
+                    <strong>Compara reembolsos:</strong> Desde 50% hasta 80% de
+                    los gastos
+                  </li>
+                </ul>
+              </div>
+
+              <h2>🎯 Nuestra Recomendación</h2>
+              <p>
+                En resumen:
+                <strong
+                  >si quieres tranquilidad y evitar sustos económicos, un seguro
+                  puede ser muy recomendable</strong
+                >, especialmente con mascotas jóvenes, razas propensas a
+                problemas, o si tienes perros grandes donde la responsabilidad
+                civil es fundamental.
+              </p>
+
+              <p>
+                Para mascotas sanas menores de 5 años, la inversión suele
+                merecer la pena. Para mascotas mayores, evalúa caso por caso.
+              </p>
+
+              <!-- Call to Action -->
+              <div
+                class="alert border-0 mt-5"
+                style="
+                  background: linear-gradient(45deg, #0d6efd, #6610f2);
+                  color: white;
+                  border-radius: 15px;
+                "
+              >
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h5>
+                      <i class="bi bi-shield-heart"></i> ¿Quieres proteger a tu
+                      mascota?
+                    </h5>
+                    <p class="mb-0">
+                      Consulta las opciones de seguro disponibles y encuentra la
+                      cobertura que mejor se adapte a las necesidades de tu
+                      peludo.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <a href="../seguros.html" class="btn btn-light btn-lg">
+                      <i class="bi bi-search"></i> Ver Seguros
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Blog -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a
+              href="../consejos-peludos.html"
+              class="btn btn-outline-primary btn-lg"
+            >
+              <i class="bi bi-arrow-left"></i> Volver a Consejos Peludos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">
+            <i class="bi bi-heart-fill text-danger"></i>
+            Alerta Peluda
+          </h4>
+          <p>Tu fuente de confianza para ofertas y consejos sobre mascotas</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#" class="social-link" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              &copy; 2025 Alerta Peluda. Hecho con ❤️ para los amantes de las
+              mascotas.
+            </p>
+            <small
+              >* La información veterinaria es orientativa. Consulta siempre con
+              un profesional.</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="../script.js"></script>
+
+    <script>
+      // Función para compartir artículo
+      function compartirArticulo() {
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href,
+          });
+        } else {
+          // Fallback: copiar URL
+          navigator.clipboard.writeText(window.location.href);
+          showToast("URL copiada al portapapeles", "success");
+        }
+      }
+    </script>
+  </body>
+</html>
