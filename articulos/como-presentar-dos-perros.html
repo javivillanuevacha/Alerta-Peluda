@@ -101,7 +101,14 @@
               </a>
             </li>
 
-            <!-- 6. Otros (Dropdown) -->
+            <!-- 6. Bienestar Natural -->
+            <li class="nav-item">
+              <a href="../bienestar-natural.html" class="category-btn">
+                🧘‍♂️ Bienestar Natural
+              </a>
+            </li>
+
+            <!-- 7. Otros (Dropdown) -->
             <li class="nav-item dropdown">
               <a
                 class="category-btn dropdown-toggle"
@@ -130,23 +137,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- Breadcrumb -->
-    <div class="container mt-3">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="../index.html">🏠 Inicio</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="../consejos-peludos.html">📚 Consejos Peludos</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Presentar Dos Perros
-          </li>
-        </ol>
-      </nav>
-    </div>
 
     <!-- Article Header -->
     <section class="hero-section" style="padding: 40px 0">
@@ -190,7 +180,7 @@
             <!-- Article Featured Image -->
             <div class="text-center mb-5">
               <img
-                src="https://picsum.photos/800/400?random=206"
+                src="/img/como presentar dos perros articulos.jpeg"
                 alt="Cómo Presentar Correctamente Dos Perros"
                 class="img-fluid rounded shadow-sm"
                 style="max-height: 400px; width: 100%; object-fit: cover"
@@ -730,19 +720,28 @@
           <p>Tu fuente de confianza para ofertas y consejos sobre mascotas</p>
 
           <div class="social-links">
-            <a href="#" class="social-link" title="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="social-link" title="Instagram">
+            <a
+              href="https://www.instagram.com/alertapeluda/"
+              target="_blank"
+              class="social-link"
+              title="Instagram"
+            >
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="#" class="social-link" title="Twitter">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="#" class="social-link" title="YouTube">
+            <a
+              href="https://www.youtube.com/@AlertaPeluda"
+              target="_blank"
+              class="social-link"
+              title="YouTube"
+            >
               <i class="bi bi-youtube"></i>
             </a>
-            <a href="#" class="social-link" title="TikTok">
+            <a
+              href="https://www.tiktok.com/@alertapeluda"
+              target="_blank"
+              class="social-link"
+              title="TikTok"
+            >
               <i class="bi bi-tiktok"></i>
             </a>
           </div>
@@ -778,7 +777,7 @@
         } else {
           // Fallback: copiar URL
           navigator.clipboard.writeText(window.location.href);
-          showToast("URL copiada al portapapeles", "success");
+          alert("URL copiada al portapapeles");
         }
       }
     </script>
