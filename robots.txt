@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /.github/
+Disallow: /README.MD
+Disallow: /script.js
+Disallow: /style.css
+
+Allow: /index.html
+Allow: /otros/
+Allow: /articulos/
+Allow: /img/
+
+Sitemap: https://alertapeluda.es/sitemap.xml
