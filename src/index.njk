@@ -1,0 +1,35 @@
+---
+# Portada temporal "Volvemos pronto".
+# noindex: true  -> Google no la guarda mientras la web está en obras.
+layout: base.njk
+title: Volvemos pronto
+description: Estamos preparando una guía práctica para convivir con galgos y podencos adoptados. Volvemos pronto.
+noindex: true
+---
+<main class="tarjeta">
+  <p class="logo">Alerta Peluda 🐾</p>
+
+  <svg class="huella" viewBox="0 0 100 100" role="img" aria-label="Huella de perro">
+    <g fill="#b5532c">
+      <ellipse cx="50" cy="66" rx="20" ry="17"/>
+      <ellipse cx="24" cy="44" rx="8" ry="11" transform="rotate(-20 24 44)"/>
+      <ellipse cx="40" cy="28" rx="8" ry="11" transform="rotate(-6 40 28)"/>
+      <ellipse cx="60" cy="28" rx="8" ry="11" transform="rotate(6 60 28)"/>
+      <ellipse cx="76" cy="44" rx="8" ry="11" transform="rotate(20 76 44)"/>
+    </g>
+  </svg>
+
+  <span class="etiqueta">Volvemos pronto</span>
+  <h1>Estamos preparando algo nuevo</h1>
+  <p class="lead">Alerta Peluda se está convirtiendo en una guía práctica para convivir con <strong>galgos y podencos adoptados</strong>: los primeros días en casa, educación, salud, cuidados y el equipo que de verdad necesitan.</p>
+  <p class="lead">Mientras tanto, puedes seguirnos en redes.</p>
+
+  <nav aria-label="Redes sociales">
+    <span>Síguenos</span>
+    <a href="{{ site.social.instagram }}" rel="noopener">Instagram</a>
+    <a href="{{ site.social.youtube }}" rel="noopener">YouTube</a>
+    <a href="{{ site.social.tiktok }}" rel="noopener">TikTok</a>
+  </nav>
+
+  <footer>© {% year %} {{ site.name }}</footer>
+</main>
