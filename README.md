@@ -11,7 +11,6 @@ Guía práctica para convivir con **galgos y podencos adoptados** · [alertapelu
 | `src/_data/site.json` | Datos generales: nombre, dirección, redes sociales |
 | `src/assets/` | Estilos e imágenes |
 | `src/static/` | `.htaccess` y `robots.txt` |
-| `_archivo-2025/` | La web antigua de ofertas, guardada solo como recuerdo. No se publica. |
 | `.github/workflows/publicar.yml` | La publicación automática a Banahosting |
 
 ## Cómo se trabaja
