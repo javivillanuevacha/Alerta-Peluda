@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  {%- if noindex %}
+  <meta name="robots" content="noindex, follow">
+  {%- else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- endif %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="stylesheet" href="/assets/estilos.css">
+</head>
+<body>
+  {{ content | safe }}
+
+  {#- Aviso obligatorio de Amazon: solo en páginas que lleven enlaces de afiliado (afiliados: true) #}
+  {%- if afiliados %}
+  <aside class="aviso-afiliados">
+    En calidad de Afiliado de Amazon, Alerta Peluda obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables.
+  </aside>
+  {%- endif %}
+</body>
+</html>

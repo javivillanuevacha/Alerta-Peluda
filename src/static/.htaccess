@@ -1,0 +1,12 @@
+# Alerta Peluda - página temporal "Volvemos pronto"
+# Cualquier URL antigua (perros.html, gatos.html, articulos/..., etc.)
+# se redirige a la portada. Redirección TEMPORAL (302) porque la
+# estructura definitiva será distinta.
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^ / [R=302,L]
+
+ErrorDocument 404 /index.html

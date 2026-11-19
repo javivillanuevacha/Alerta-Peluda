@@ -1,0 +1,71 @@
+# Publica la web en Banahosting cada vez que se acepta un cambio en "main".
+#
+# Está APAGADA hasta que en GitHub existan:
+#   - Variable  PUBLICAR_ACTIVO = true
+#   - Secretos  FTP_SERVIDOR, FTP_USUARIO, FTP_CONTRASENA
+# (Settings > Secrets and variables > Actions)
+
+name: Publicar web
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # permite lanzarla a mano desde la pestaña "Actions"
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    name: Construir la web
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v7
+
+      - name: Preparar Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar Eleventy
+        run: npm ci
+
+      - name: Generar la web
+        run: npm run build
+
+      - name: Guardar la web generada
+        uses: actions/upload-artifact@v7
+        with:
+          name: web
+          path: _site/
+          include-hidden-files: true # para incluir .htaccess
+
+  subir:
+    name: Subir a Banahosting
+    needs: construir
+    if: vars.PUBLICAR_ACTIVO == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperar la web generada
+        uses: actions/download-artifact@v8
+        with:
+          name: web
+          path: _site/
+
+      - name: Subir por FTP
+        # SamKirkland/FTP-Deploy-Action v4.4.0 (fijado por commit)
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287
+        with:
+          server: ${{ secrets.FTP_SERVIDOR }}
+          username: ${{ secrets.FTP_USUARIO }}
+          password: ${{ secrets.FTP_CONTRASENA }}
+          protocol: ${{ vars.FTP_PROTOCOLO || 'ftps' }}
+          local-dir: ./_site/
+          server-dir: ./
+          # Nunca tocar estas carpetas del servidor
+          exclude: |
+            **/.well-known/**
+            **/cgi-bin/**
